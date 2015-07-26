@@ -179,7 +179,9 @@
   }
 
   > img {
-    display: block;
+    display: inline-block;
+    position: absolute;
+    max-width: 250px;
   }
 
   @media (min-width: $grid-float-breakpoint) {
@@ -247,7 +249,7 @@
 }
 
 .navbar-toggle span:before {
-  top: -10px; 
+  top: -10px;
 }
 .navbar-toggle span:after {
   bottom: -10px;
@@ -576,6 +578,11 @@
 .navbar-custom
 {
   background-color: transparent;
+}
+
+.navbar-subpages
+{
+  background-color: #37677F;
 }
 
 // Inverse navbar
