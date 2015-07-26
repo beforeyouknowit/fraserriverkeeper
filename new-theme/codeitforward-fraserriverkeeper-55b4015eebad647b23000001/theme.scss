@@ -176,7 +176,7 @@ footer {
 }
 
 .navbar-brand {
-	min-height: 100px;
+	height: auto;
 }
 
 .sidebar {
@@ -460,6 +460,7 @@ h6.subhead {
 			display:inline;
 		}
 	}
+
 }
 
 .social-media
@@ -488,6 +489,41 @@ h6.subhead {
 		  padding-bottom: 10px;
 		  padding-left: 13px;
 		  padding-right: 13px;
+		}
+	}
+}
+
+.footer-container
+{
+	background-color: #2b424a;
+	height: 300px;
+	color: white;
+
+	ul
+	{
+		list-style: none;
+		padding-left: 0;
+
+		a
+		{
+			color: #a2acb0;
+			font-size: 13px;
+			text-decoration: none;
+		}
+	}
+
+	.footer-item-header
+	{
+		font-family: $font-tall;
+		font-size: $font-tall-big - 37px;
+	}
+
+	div
+	{
+		&.col_one
+		{
+			font-family: $font-tall;
+			font-size: $font-tall-big - 24px;
 		}
 	}
 }
