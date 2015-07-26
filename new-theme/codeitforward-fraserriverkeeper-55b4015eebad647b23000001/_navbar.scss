@@ -34,6 +34,11 @@
   @media (min-width: $grid-float-breakpoint) {
     float: left;
   }
+
+  a
+  {
+    color: #fff;
+  }
 }
 
 
@@ -214,6 +219,7 @@
     width: 22px;
     height: 2px;
     border-radius: 1px;
+    background-color: #fff;
   }
   .icon-bar + .icon-bar {
     margin-top: 4px;
@@ -222,6 +228,45 @@
   @media (min-width: $grid-float-breakpoint) {
     display: none;
   }
+}
+
+.navbar-toggle span
+{
+  right: 5px;
+}
+
+.navbar-toggle span, .navbar-toggle span:before,.navbar-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: white;
+  position: absolute;
+  display: block;
+  content: '';
+}
+
+.navbar-toggle span:before {
+  top: -10px; 
+}
+.navbar-toggle span:after {
+  bottom: -10px;
+}
+
+.navbar-toggle span, .navbar-toggle span:before, .navbar-toggle span:after {
+  transition: all 500ms ease-in-out;
+}
+.navbar-toggle.active span {
+  background-color: transparent;
+}
+.navbar-toggle.active span:before, .navbar-toggle.active span:after {
+  top: 0;
+}
+.navbar-toggle.active span:before {
+  transform: rotate(45deg);
+}
+.navbar-toggle.active span:after {
+  transform: rotate(-45deg);
 }
 
 
@@ -237,6 +282,7 @@
     padding-top:    10px;
     padding-bottom: 10px;
     line-height: $line-height-computed;
+    color: #fff;
   }
 
   @media (max-width: $grid-float-breakpoint-max) {
@@ -446,7 +492,7 @@
       background-color: $navbar-default-toggle-hover-bg;
     }
     .icon-bar {
-      background-color: $navbar-default-toggle-icon-bar-bg;
+      background-color: #fff;
     }
   }
 
@@ -526,6 +572,12 @@
   }
 }
 
+// Custom Navbar
+.navbar-custom
+{
+  background-color: transparent;
+}
+
 // Inverse navbar
 
 .navbar-inverse {
@@ -581,7 +633,7 @@
       background-color: $navbar-inverse-toggle-hover-bg;
     }
     .icon-bar {
-      background-color: $navbar-inverse-toggle-icon-bar-bg;
+      background-color: #fff;
     }
   }
 
@@ -656,6 +708,34 @@
       &:hover,
       &:focus {
         color: $navbar-inverse-link-disabled-color;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+
+  .nav-header-mobile
+  {
+    background-color: #37677F;
+  }
+
+  .collapse
+  {
+    &.in
+    {
+      background-color: #37677F;
+    }
+  }
+
+  .navbar-collapse
+  {
+    ul
+    {
+      &.pull-right
+      {
+        float: none !important;
+        text-align: center;
       }
     }
   }
