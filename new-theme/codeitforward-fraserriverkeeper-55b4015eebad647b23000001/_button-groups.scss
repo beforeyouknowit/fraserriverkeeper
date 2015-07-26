@@ -64,6 +64,12 @@
   @include border-left-radius(0);
 }
 
+.dropdown {
+  li:nth-last-child(2){
+    background-color: #69BFEB ;
+  }
+}
+
 // Custom edits for including btn-groups within btn-groups (useful for including dropdown buttons within a btn-group)
 .btn-group > .btn-group {
   float: left;
