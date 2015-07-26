@@ -41,6 +41,8 @@
         {% include "carousel" %}
       {% endif %}
 
+      {% include blog-and-twitter %}
+
       <div class="main container clearfix {% if site.has_background_image? %}well well-lg{% endif %}">
 
         {% if request.is_sidebar? %}
@@ -50,15 +52,9 @@
         {% endif %}
 
       </div>
-
-      {% if site.is_homepage? %}
-        {% include "home-single-blog" %}
-      {% endif %}
-
       <!-- .main -->
     </div>
     <!-- .main-container -->
-
     {% include footer %}
 
     {% if site.has_background_image? %}
