@@ -54,7 +54,7 @@
 
 .navbar-collapse {
   overflow-x: visible;
-  margin-top: 32px;
+  margin-top: 43px;
   padding-right: $navbar-padding-horizontal;
   padding-left:  $navbar-padding-horizontal;
   border-top: 1px solid transparent;
@@ -454,6 +454,16 @@
 // --------------------------------------------------
 
 // Default navbar
+
+.navbar-nav
+{
+  background-color: #69BFEB;
+
+  li:nth-last-child(2)
+  {
+    background-color: #FECD05;
+  }
+}
 .navbar-default {
   background-color: $navbar-default-bg;
   border-color: $navbar-default-border;
@@ -733,6 +743,11 @@
 }
 
 @media (max-width: 767px) {
+
+  .navbar-header
+  {
+    height: 66px;
+  }
 
   .navbar-custom
   {
