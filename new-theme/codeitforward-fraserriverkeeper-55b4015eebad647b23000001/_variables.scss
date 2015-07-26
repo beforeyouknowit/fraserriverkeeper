@@ -47,7 +47,7 @@ $link-hover-decoration: underline !default;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
@@ -66,10 +66,10 @@ $font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
 
 // Custom Google Fonts for Fraser Riverkeeper
 $font-tall:               "Shadows Into Light Two";
-$font-tall-big:           floor(($font-size-base * 4.0)) !default; // ~68px
+$font-tall-big:           floor(($font-size-base * 5.0)) !default; // ~70px
 $font-tall-small:         floor(($font-size-base * 1.7)) !default; // ~24px
 $font-open:               "Open Sans";
-$font-open-big:           floor(($font-size-base * 3.0)) !default; // ~42px
+$font-open-big:           floor(($font-size-base * 4.0)) !default; // ~42px
 $font-open-small:         floor(($font-size-base * 1.25)) !default; // ~18px
 
 //** Unit-less `line-height` for use in components like buttons.
@@ -861,8 +861,10 @@ $abbr-border-color:           $gray-light !default;
 $headings-small-color:        $gray-light !default;
 //** Blockquote small color
 $blockquote-small-color:      $gray-light !default;
+//** Blockquote custom font
+$blockquote-font:             $font-open;
 //** Blockquote font size
-$blockquote-font-size:        ($font-size-base * 1.25) !default;
+$blockquote-font-size:        floor(($font-size-base * 2.0)) !default; // ~28px
 //** Blockquote border color
 $blockquote-border-color:     $gray-lighter !default;
 //** Page header border color

@@ -12,6 +12,8 @@
 	margin-bottom: $line-height-computed;
 }
 
+
+// Fraser Riverkeeper custom fonts and panels
 .font-tall-big {
 	font-family: $font-tall;
 	font-size: $font-tall-big;
@@ -25,11 +27,27 @@
 .font-open-big {
 	font-family: $font-open;
 	font-size: $font-open-big;
+	margin-bottom: 20px;
+}
+
+.font-open-big-bold {
+	font-family: $font-open;
+	font-size: $font-open-big;
+	margin-bottom: 20px;
+	font-weight: 700;
 }
 
 .font-open-small {
 	font-family: $font-open;
 	font-size: $font-open-small;
+}
+
+.impact-panel {
+	background-color: #FECD05;
+	background-image: url(https://d3n8a8pro7vhmx.cloudfront.net/fraserriverkeeper/pages/108/attachments/original/1437935905/Impact_Pattern.png);
+	background-blend-mode: luminosity;
+	padding-top: $font-tall-big;
+	padding-bottom: $font-tall-big;
 }
 
 // NationBuilder styles
