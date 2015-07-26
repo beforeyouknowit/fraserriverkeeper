@@ -70,6 +70,14 @@
   }
 }
 
+.dropdown:last-child
+{
+  ul.dropdown-menu
+  {
+    left: -154px;
+  }
+}
+
 // Custom edits for including btn-groups within btn-groups (useful for including dropdown buttons within a btn-group)
 .btn-group > .btn-group {
   float: left;
