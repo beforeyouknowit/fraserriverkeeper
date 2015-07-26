@@ -50,6 +50,11 @@
         {% endif %}
 
       </div>
+
+      {% if site.is_homepage? %}
+        {% include "home-single-blog" %}
+      {% endif %}
+
       <!-- .main -->
     </div>
     <!-- .main-container -->

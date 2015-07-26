@@ -13,7 +13,7 @@
 }
 
 
-// Fraser Riverkeeper custom fonts and panels
+// Fraser Riverkeeper custom fonts, panels, glyphs
 .font-tall-big {
 	font-family: $font-tall;
 	font-size: $font-tall-big;
@@ -35,6 +35,7 @@
 	font-size: ceil(($font-open-big * 1.8));
 	margin-bottom: 0;
 	font-weight: 800;
+	color: #37677F;
 }
 
 .font-open-small {
@@ -57,6 +58,10 @@
 	background-blend-mode: luminosity;
 	padding-top: floor(($font-tall-big / 1.5));
 	padding-bottom: floor(($font-tall-big / 1.5));
+}
+
+.impact-recreational {
+
 }
 
 // NationBuilder styles
