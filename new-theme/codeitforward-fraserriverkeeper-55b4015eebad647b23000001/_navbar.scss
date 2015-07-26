@@ -10,7 +10,7 @@
 
 .navbar {
   position: relative;
-  min-height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
+  min-height: 100px; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
   margin-bottom: $navbar-margin-bottom;
   border: 1px solid transparent;
 
@@ -54,7 +54,7 @@
 
 .navbar-collapse {
   overflow-x: visible;
-  margin-top: 27px;
+  margin-top: 32px;
   padding-right: $navbar-padding-horizontal;
   padding-left:  $navbar-padding-horizontal;
   border-top: 1px solid transparent;
@@ -279,6 +279,8 @@
 // the nav the full height of the horizontal nav (above 768px).
 .navbar-title
 {
+  font-family: $font-tall;
+  font-size: 18px;
   display: block;
   float: right;
   margin-right: 15px;
