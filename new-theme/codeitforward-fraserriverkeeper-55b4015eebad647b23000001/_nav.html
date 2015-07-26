@@ -8,7 +8,7 @@
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapse">
         <span></span>
       </button>
-        <a class="navbar-brand" href="/"><img alt="{{ site.long_name }}" class="img-responsive" src="http://d3n8a8pro7vhmx.cloudfront.net/fraserriverkeeper/sites/1/meta_images/original/frk_logo_white.png?1402956590"></a>
+        <a class="navbar-brand" href="{{ site.full_url }}"><img alt="{{ site.long_name }}" class="img-responsive" src="http://d3n8a8pro7vhmx.cloudfront.net/fraserriverkeeper/sites/1/meta_images/original/frk_logo_white.png" alt="Fraser Riverkeeper logo"></a>
     </div>
     <span class="navbar-title hidden-xs">Ensuring swimmable, drinkable, fishable water in BC.</span>
     <div id="menu-collapse" class="collapse navbar-collapse">
@@ -32,12 +32,13 @@
         {% endfor %}
         <!-- FRK: Custom hard-coded login button dropdown -->
         <li class="dropdown">
-          <a href="{{ site.full_url }}login" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="glyphicon glyphicon-user"></i></a>
+          <a href="{{ site.full_url }}login" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="glyphicon glyphicon-user"></i>&nbsp;<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <!-- If logged in, show logout button in dropdown -->
             {%if request.logged_in? %} 
-            <li><a href="{{ site.full_url }}logout"><i class="glyphicon glyphicon-exit"></i>Sign Out</a></li>
+            <li><a href="{{ site.full_url }}logout"><i class="glyphicon glyphicon-exit"></i>Sign Out </a></li>
             {% else %}
+            <!-- Otherwise, show login buttons in dropdown -->
             <li><a href="http://fraserriverkeeper.nationbuilder.com/users/facebook/connect?page_id=1&scope=public_profile%2Cemail"><i class="icon-facebook-squared"></i>Sign in with Facebook</a></li>
             <li><a href="http://www.fraserriverkeeper.ca/users/twitter/connect?page_id=1"><i class="icon-twitter-squared"></i>Sign in with Twitter</a></li>
             <li><a href="{{ site.full_url }}login"><i class="icon-user"></i>Sign in with Email</a></li>
