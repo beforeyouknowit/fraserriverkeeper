@@ -32,9 +32,9 @@
 
 .font-open-big-bold {
 	font-family: $font-open;
-	font-size: $font-open-big;
-	margin-bottom: 20px;
-	font-weight: 700;
+	font-size: ceil(($font-open-big * 1.8));
+	margin-bottom: 0;
+	font-weight: 800;
 }
 
 .font-open-small {
@@ -42,12 +42,19 @@
 	font-size: $font-open-small;
 }
 
+.font-open-small-bold {
+	font-family: $font-open;
+	font-size: floor(($font-open-big / 1.5));
+	margin-bottom: 10px;
+	font-weight: 800;
+}
+
 .impact-panel {
 	background-color: #FECD05;
 	background-image: url(https://d3n8a8pro7vhmx.cloudfront.net/fraserriverkeeper/pages/108/attachments/original/1437935905/Impact_Pattern.png);
 	background-blend-mode: luminosity;
-	padding-top: $font-tall-big;
-	padding-bottom: $font-tall-big;
+	padding-top: floor(($font-tall-big / 1.5));
+	padding-bottom: floor(($font-tall-big / 1.5));
 }
 
 // NationBuilder styles
