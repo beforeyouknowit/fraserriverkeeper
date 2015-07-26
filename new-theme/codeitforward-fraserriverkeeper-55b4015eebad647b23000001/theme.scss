@@ -468,6 +468,7 @@ h6.subhead {
 .social-media
 {
 	background-color: #37677F;
+	background-image: url('http://d3n8a8pro7vhmx.cloudfront.net/themes/539f572101925b03c1000001/attachments/original/1403727811/waves.png?1403727811');
 	padding-top: 5px;
 
 	img
@@ -500,6 +501,12 @@ h6.subhead {
 	background-color: #2b424a;
 	height: 300px;
 	color: white;
+	padding: 30px;
+
+	img
+	{
+		max-width: 250px;
+	}
 
 	ul
 	{
@@ -520,12 +527,28 @@ h6.subhead {
 		font-size: $font-tall-big - 37px;
 	}
 
+	.login-panel
+	{
+			margin-top: 30px;
+	}
+
 	div
 	{
 		&.col_one
 		{
 			font-family: $font-tall;
 			font-size: $font-tall-big - 24px;
+
+			a
+			{
+				color: white;
+				text-decoration: none;
+			}
+		}
+
+		&.address
+		{
+			text-align: right;
 		}
 	}
 }

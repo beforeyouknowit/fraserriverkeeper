@@ -76,30 +76,30 @@
         <div class="container">
           <div class"row">
             <div class="col-sm-2 col_one">
-              Home<br/>
-              Blog<br/>
-              Bvents
+              <a href="/">Home</a><br/>
+              <a href="/blog">Blog</a><br/>
+              <a href="/events">Events</a>
             </div>
             <div class="col-sm-2">
               <span class="footer-item-header">Take Action</span>
               <ul>
                 <li>
-                  <a href="">Keep in Touch</a>
+                  <a href="/keep_in_touch">Keep in Touch</a>
                 </li>
                 <li>
-                  <a href="">Volunteer</a>
+                  <a href="/volunteer">Volunteer</a>
                 </li>
                 <li>
-                  <a href="">Swim Guide</a>
+                  <a href="/swim_guide">Swim Guide</a>
                 </li>
                 <li>
-                  <a href="">Send Salmon Recipes</a>
+                  <a href="/send_a_salmon_recipe">Send Salmon Recipes</a>
                 </li>
                 <li>
-                  <a href="">What's your Watermark?</a>
+                  <a href="/whats_your_water_story">What's your Watermark?</a>
                 </li>
                 <li>
-                  <a href="">Report Pollution</a>
+                  <a href="/report_pollution">Report Pollution</a>
                 </li>
               </ul>
             </div>
@@ -107,19 +107,19 @@
               <span class="footer-item-header">Issues</span>
               <ul>
                 <li>
-                  <a href="">Vancouver Water Quality</a>
+                  <a href="/vancouver_water_quality">Vancouver Water Quality</a>
                 </li>
                 <li>
-                  <a href="">Salmon Farming</a>
+                  <a href="/salmon_farming">Salmon Farming</a>
                 </li>
                 <li>
-                  <a href="">Illegal Dumping</a>
+                  <a href="/illegal_dumping">Illegal Dumping</a>
                 </li>
                 <li>
-                  <a href="">Gravel Mining</a>
+                  <a href="/gravel_mining">Gravel Mining</a>
                 </li>
                 <li>
-                  <a href="">Coal Transport</a>
+                  <a href="/coal_transport">Coal Transport</a>
                 </li>
               </ul>
             </div>
@@ -127,57 +127,62 @@
               <span class="footer-item-header">About</span>
               <ul>
                 <li>
-                  <a href="">About Us</a>
+                  <a href="/about">About Us</a>
                 </li>
                 <li>
-                  <a href="">Meet the Team</a>
+                  <a href="/meet_the_team">Meet the Team</a>
                 </li>
                 <li>
-                  <a href="">Contact</a>
+                  <a href="contact">Contact</a>
                 </li>
               </ul>
             </div>
-            <div class="col-sm-2"></div>
-            <div class="col-sm-2">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3">
               <img src="http://d3n8a8pro7vhmx.cloudfront.net/fraserriverkeeper/sites/1/meta_images/original/frk_logo_white.png?1402956590" />
+              <div class='address'>
+                <p>
+                  #90-425 Carall St<br/>
+                  Vancouver, BC V6B 6E3, Canada<br/>
+                  (604)-674-7444
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+        <div class="container login-panel">
+          <div class="row">
+            <!-- <div class="container footer-login {% if site.has_background_image? %}well well-lg{% endif %}">
 
-      <div class="container {% if site.has_background_image? %}well well-lg{% endif %}">
+              {{ content_for_footer }}
 
-        {{ content_for_footer }}
-
-        {% if site.footer_content.size > 0 %}
-        <div class="footer-text">{{ site.footer_content }}</div>
-        <hr/>
-        {% endif %}
-
-        <div class="row">
-
-          <div class="footer-items col-xs-12 col-md-4 footer-left">
-            {% if request.logged_in? %}
-              Hi <a href="{{ request.current_signup.settings_url }}">{{ request.current_signup.name_or_email }}</a>. View your
-              {% if site.show_public_profiles? %}
-                <a href="{{ request.current_signup.profile_url }}">public profile</a>,
+              {% if site.footer_content.size > 0 %}
+              <div class="footer-text">{{ site.footer_content }}</div>
+              <hr/>
               {% endif %}
-              <a href="{{ request.current_signup.settings_url }}">account settings</a>, or
-              <a href="{{ request.current_signup.logout_url }}">sign out</a>.
-            {% else %}
-              Sign in with <a href="{{ request.facebook_connect_url }}">Facebook</a>, <a
-                  href="{{ request.twitter_connect_url }}">Twitter</a> or <a href="/login">email</a>.
-            {% endif %}
-          </div>
-          <div class="footer-items col-xs-12 col-md-4 footer-center text-center">
-            &nbsp;
-          </div>
-          <div class="footer-items col-xs-12 col-md-4 footer-right text-right">
-            <!-- The NationBuilder link below is required. If it is removed, we may add it back ourselves.
-                 You can style it or move it in different ways, but please leave it in the footer. -->
-            Theme proudly built at <a href="http://codeitforward.ca">CodeItForward</a> on <a href="http://nationbuilder.com/">NationBuilder</a>.
-          </div>
 
+              <div class="row"> -->
+                <div class="footer-items col-xs-12 col-md-6 footer-left">
+                  {% if request.logged_in? %}
+                    Hi <a href="{{ request.current_signup.settings_url }}">{{ request.current_signup.name_or_email }}</a>. View your
+                    {% if site.show_public_profiles? %}
+                      <a href="{{ request.current_signup.profile_url }}">public profile</a>,
+                    {% endif %}
+                    <a href="{{ request.current_signup.settings_url }}">account settings</a>, or
+                    <a href="{{ request.current_signup.logout_url }}">sign out</a>.
+                  {% else %}
+                    Sign in with <a href="{{ request.facebook_connect_url }}">Facebook</a>, <a
+                        href="{{ request.twitter_connect_url }}">Twitter</a> or <a href="/login">email</a>.
+                  {% endif %}
+                </div>
+                <div class="footer-items col-xs-12 col-md-6 footer-right text-right">
+                  <!-- The NationBuilder link below is required. If it is removed, we may add it back ourselves.
+                       You can style it or move it in different ways, but please leave it in the footer. -->
+                  Theme proudly built at <a href="http://codeitforward.ca">CodeItForward</a> on <a href="http://nationbuilder.com/">NationBuilder</a>.
+                </div>
+              <!-- </div>-->
+            <!-- </div>-->
+          </div>
         </div>
       </div>
       <!-- container -->
