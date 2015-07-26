@@ -459,7 +459,7 @@
 {
   background-color: #69BFEB;
 
-  li:last-child
+  li:nth-last-child(2)
   {
     background-color: #FECD05;
   }
