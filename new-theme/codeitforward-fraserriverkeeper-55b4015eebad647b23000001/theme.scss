@@ -465,6 +465,71 @@ h6.subhead {
 
 }
 
+.social-media
+{
+	background-color: #37677F;
+	padding-top: 5px;
+
+	img
+	{
+		float: right;
+		width: 30px;
+		height: 30px;
+		margin-right: 10px;
+	}
+
+	span
+	{
+		&.donate-button
+		{
+			background-color: #FECD05;
+			color: white;
+			float: right;
+			text-transform: uppercase;
+			margin-top: -5px;
+		  padding-top: 10px;
+		  padding-bottom: 10px;
+		  padding-left: 13px;
+		  padding-right: 13px;
+		}
+	}
+}
+
+.footer-container
+{
+	background-color: #2b424a;
+	height: 300px;
+	color: white;
+
+	ul
+	{
+		list-style: none;
+		padding-left: 0;
+
+		a
+		{
+			color: #a2acb0;
+			font-size: 13px;
+			text-decoration: none;
+		}
+	}
+
+	.footer-item-header
+	{
+		font-family: $font-tall;
+		font-size: $font-tall-big - 37px;
+	}
+
+	div
+	{
+		&.col_one
+		{
+			font-family: $font-tall;
+			font-size: $font-tall-big - 24px;
+		}
+	}
+}
+
 @media (max-width: 767px) {
   .footer-items
   {
