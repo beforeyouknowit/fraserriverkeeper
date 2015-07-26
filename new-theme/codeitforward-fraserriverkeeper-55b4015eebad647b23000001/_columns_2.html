@@ -51,7 +51,7 @@
         <div class="panel-body">
           {% if site.has_facebook_page? %}
           <div class="fb-page" data-href="{{ site.broadcaster.facebook_page_profile_url }}" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="{{ site.broadcaster.facebook_page_profile_url }}"><a href="{{ site.broadcaster.facebook_page_profile_url }}">{{ site.broadcaster.facebook_page_username }}</a></blockquote></div></div>
-          
+
           {% else %}
           <fb:like href="{{ site.full_url }}" colorscheme="{{ site.facebook_colorscheme }}" width="240"></fb:like>
           {% endif %}

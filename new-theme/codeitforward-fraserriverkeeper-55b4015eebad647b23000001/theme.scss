@@ -561,6 +561,26 @@ h6.subhead {
 	}
 }
 
+.sign-up-container
+{
+	background-color: #69c0ec;
+	padding: 20px;
+
+	form
+	{
+		input
+		{
+		  font-family: initial;
+			margin-right: 10px;
+		}
+
+		a
+		{
+			font-family: initial;
+		}
+	}
+}
+
 @media (max-width: 767px) {
   .footer-items
   {
