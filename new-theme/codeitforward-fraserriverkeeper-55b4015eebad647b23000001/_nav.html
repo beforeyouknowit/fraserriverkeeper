@@ -34,9 +34,14 @@
         <li class="dropdown">
           <a href="{{ site.full_url }}login" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="glyphicon glyphicon-user"></i></a>
           <ul class="dropdown-menu" role="menu">
+            <!-- If logged in, show logout button in dropdown -->
+            {%if request.logged_in? %} 
+            <li><a href="http://fraserriverkeeper.nationbuilder.com/users/facebook/connect?page_id=1&scope=public_profile%2Cemail"><i class="glyphicon glyphicons-exit"></i>Sign Out</a></li>
+            {% else %}
             <li><a href="http://fraserriverkeeper.nationbuilder.com/users/facebook/connect?page_id=1&scope=public_profile%2Cemail"><i class="icon-facebook-squared"></i>Sign in with Facebook</a></li>
             <li><a href="http://www.fraserriverkeeper.ca/users/twitter/connect?page_id=1"><i class="icon-twitter-squared"></i>Sign in with Twitter</a></li>
             <li><a href="{{ site.full_url }}login"><i class="icon-user"></i>Sign in with Email</a></li>
+            {% endif %}
           </ul>
         </li>
       </ul>
