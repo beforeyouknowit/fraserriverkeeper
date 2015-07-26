@@ -435,7 +435,36 @@ h6.subhead {
 			display:inline;
 		}
 	}
+}
 
+.social-media
+{
+	background-color: #37677F;
+	padding-top: 5px;
+
+	img
+	{
+		float: right;
+		width: 30px;
+		height: 30px;
+		margin-right: 10px;
+	}
+
+	span
+	{
+		&.donate-button
+		{
+			background-color: #FECD05;
+			color: white;
+			float: right;
+			text-transform: uppercase;
+			margin-top: -5px;
+		  padding-top: 10px;
+		  padding-bottom: 10px;
+		  padding-left: 13px;
+		  padding-right: 13px;
+		}
+	}
 }
 
 @media (max-width: 767px) {
