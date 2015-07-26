@@ -12,6 +12,26 @@
 	margin-bottom: $line-height-computed;
 }
 
+.font-tall-big {
+	font-family: $font-tall;
+	font-size: $font-tall-big;
+}
+
+.font-tall-small {
+	font-family: $font-tall;
+	font-size: $font-tall-small;
+}
+
+.font-open-big {
+	font-family: $font-open;
+	font-size: $font-open-big;
+}
+
+.font-open-small {
+	font-family: $font-open;
+	font-size: $font-open-small;
+}
+
 // NationBuilder styles
 img {
 	max-width: 100%;
@@ -127,7 +147,7 @@ footer {
 }
 
 .site-logo {
-	padding: 15px 15px 15px 0;
+	padding: 20px 20px 20px 0;
 }
 
 .navbar-brand {
