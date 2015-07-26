@@ -36,7 +36,9 @@
     {% endif %}
 
     <div class="main-container" id="middle">
-      {% include "carousel" %}
+      {% if site.is_homepage? %}
+        {% include "carousel" %}
+      {% endif %}
 
       <div class="main container clearfix {% if site.has_background_image? %}well well-lg{% endif %}">
 
@@ -120,9 +122,8 @@
           }
          });
       })
-     
+
     </script>
 
   </body>
 </html>
-
