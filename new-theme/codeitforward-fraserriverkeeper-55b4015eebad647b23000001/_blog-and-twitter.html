@@ -1,7 +1,8 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-6">
-      {% include "home-single-blog" %}
+      <h2>Latest Blog</h2>
+      {% subpage "blog" with "home-single-blog" %}
     </div>
     <div class="col-sm-6">
       <div class="sign-up-container">
@@ -10,7 +11,7 @@
           <input type="email" pattern="[^ @]*@[^ @]*" placeholder="enter your email address" size="35"><a href="/volunteer" class="btn btn-warning small-btn">Keep in touch</a>
         </form>
       </div>
-      <div class="twitter-feed">
+      <div class="twitter-feed-container">
         <a class="twitter-timeline" href="https://twitter.com/FraserRivKeeper" data-widget-id="625452436891643905">Tweets by @FraserRivKeeper</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
       </div>
