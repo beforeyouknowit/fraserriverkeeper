@@ -579,7 +579,12 @@ h6.subhead {
 		input
 		{
 		  font-family: 'Open Sans', 'Helvetica Neue';
-			margin-right: 10px;
+
+			.keep-in-touch-btn{
+				margin-top: -4px;
+				padding: 11px;
+				margin-left: -2px;
+			}
 		}
 
 		a
