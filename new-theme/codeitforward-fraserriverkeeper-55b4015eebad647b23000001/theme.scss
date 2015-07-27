@@ -122,6 +122,14 @@ img {
 }
 
 // Components
+.main
+{
+	&.container
+	{
+		margin-top: -70px;
+	}
+}
+
 .main-container, .breadcrumb, .excerpt, .page-tags, .event-block, .event-map, .event-detail, .continue, .page-follow, .like-page {
 	@extend .module;
 }
@@ -570,13 +578,13 @@ h6.subhead {
 	{
 		input
 		{
-		  font-family: initial;
+		  font-family: 'Open Sans', 'Helvetica Neue';
 			margin-right: 10px;
 		}
 
 		a
 		{
-			font-family: initial;
+			font-family: 'Open Sans', 'Helvetica Neue';
 		}
 	}
 }
@@ -588,6 +596,14 @@ h6.subhead {
 }
 
 @media (max-width: 767px) {
+	.main
+	{
+		&.container
+		{
+			margin-top: 0;
+		}
+	}
+
   .footer-items
   {
     text-align: center;
