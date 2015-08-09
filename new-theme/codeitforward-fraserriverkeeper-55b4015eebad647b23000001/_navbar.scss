@@ -605,6 +605,7 @@
 .navbar-subpages
 {
   background-color: #69BFEB;
+  margin-bottom: 84px;
 }
 
 // Inverse navbar
@@ -766,6 +767,12 @@
   {
     margin-top: -3px;
   }
+
+  .navbar-subpages
+  {
+    margin-bottom: 0;
+  }
+
 
   .navbar-collapse
   {

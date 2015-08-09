@@ -187,6 +187,16 @@ footer {
 	width: 100%;
 	position: absolute;
 	height: 200px;
+
+	.logo-address
+	{
+		padding-right: 0;
+
+		img
+		{
+			margin-left: 20px;
+		}
+	}
 }
 
 .site-logo {
@@ -613,4 +623,34 @@ h6.subhead {
   {
     text-align: center;
   }
+
+	.footer-container
+	{
+		img
+		{
+			max-width: 215px;
+		}
+
+		div
+		{
+			.address
+			{
+				padding-top: 30px;
+				text-align: center;
+			}
+		}
+	}
+
+	footer
+	{
+		.logo-address
+		{
+			text-align: center;
+
+			img
+			{
+				margin-left: 0;
+			}
+		}
+	}
 }
