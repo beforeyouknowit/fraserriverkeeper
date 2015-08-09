@@ -500,14 +500,15 @@ h6.subhead {
 		&.donate-button
 		{
 			background-color: #FECD05;
-			color: white;
+			color: black;
 			float: right;
 			text-transform: uppercase;
 			margin-top: -5px;
 		  padding-top: 10px;
 		  padding-bottom: 10px;
-		  padding-left: 13px;
-		  padding-right: 13px;
+		  padding-left: 15px;
+		  padding-right: 15px;
+		  text-shadow: 2px 2px 9px rgba(150, 150, 150, 0.6);
 		}
 	}
 }
