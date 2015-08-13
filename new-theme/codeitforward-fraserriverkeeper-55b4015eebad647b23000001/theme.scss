@@ -481,10 +481,11 @@ h6.subhead {
 
 }
 
+// Footer bar: Facebook, Instagram, Twitter, Donate buttons
 .social-media
 {
 	background-color: #37677F;
-	background-image: url('http://d3n8a8pro7vhmx.cloudfront.net/themes/539f572101925b03c1000001/attachments/original/1403727811/waves.png?1403727811');
+	background-image: url('http://d3n8a8pro7vhmx.cloudfront.net/themes/539f572101925b03c1000001/attachments/original/1403727811/waves.png');
 	padding-top: 5px;
 
 	img
@@ -492,7 +493,7 @@ h6.subhead {
 		float: right;
 		width: 30px;
 		height: 30px;
-		margin-right: 10px;
+		margin-right: 12px;
 	}
 
 	span
@@ -500,7 +501,7 @@ h6.subhead {
 		&.donate-button
 		{
 			background-color: #FECD05;
-			color: black;
+			color: #333333;
 			float: right;
 			text-transform: uppercase;
 			margin-top: -5px;
@@ -508,7 +509,14 @@ h6.subhead {
 		  padding-bottom: 10px;
 		  padding-left: 15px;
 		  padding-right: 15px;
-		  text-shadow: 2px 2px 9px rgba(150, 150, 150, 0.6);
+		  text-shadow: 2px 2px 9px rgba(150, 150, 150, 0.4);
+
+		}
+		&.donate-button:hover
+		{
+			background-color: #EEEEEE;
+			color: #000000;
+			text-shadow: 2px 2px 9px rgba(150, 150, 150, 0.8);
 		}
 	}
 }
