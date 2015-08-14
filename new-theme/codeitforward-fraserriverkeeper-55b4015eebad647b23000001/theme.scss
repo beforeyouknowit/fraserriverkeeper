@@ -64,6 +64,9 @@
 
 }
 
+// Fraser Riverkeeper custom footer colors
+$lighter-gray:          #a2acb0;
+
 // NationBuilder styles
 img {
 	max-width: 100%;
@@ -152,6 +155,10 @@ img {
 
 .carousel-inner > .item > img, .carousel-inner > .item > a >img, .header-image-container > img {
 	width: 100%;
+}
+
+.supporter-carousel > .item > img, .carousel-inner > .item > a >img, .header-image-container > img {
+	// width: 100%;
 }
 
 .notice {
@@ -470,6 +477,15 @@ h6.subhead {
 	display: block;
 	float: left;
 	margin: -20px 0 0 4px;
+}
+
+// Custom Fraser Riverkeeper white links on gray text at bottom of footer
+#whiterfooter {
+	color: $lighter-gray;
+	a
+	{
+		color: #FFF;
+	}
 }
 
 @media (min-width: $screen-sm-min) {

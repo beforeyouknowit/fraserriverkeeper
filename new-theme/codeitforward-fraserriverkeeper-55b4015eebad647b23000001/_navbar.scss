@@ -297,6 +297,10 @@
     line-height: $line-height-computed;
     color: #fff;
     text-transform: uppercase;
+    &:hover,
+    &:focus {
+      color: #000;
+    }
   }
 
   @media (max-width: $grid-float-breakpoint-max) {

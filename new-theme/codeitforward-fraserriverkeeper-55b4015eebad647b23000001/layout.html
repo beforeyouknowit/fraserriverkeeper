@@ -52,6 +52,14 @@
       </div>
       <!-- .main -->
     </div>
+
+    <!-- Supporters Carousel to go here -->
+    {% comment %}
+      {% if site.is_homepage? %}
+        {% include "supporter_carousel" %}
+      {% endif %}
+    {% endcomment %}
+
     <!-- .main-container -->
     <footer>
       <div class="social-media">
@@ -60,13 +68,13 @@
             <span class="donate-button">Donate Now!</span>
           </a>
           <a href="https://twitter.com/FraserRivKeeper" target="_blank">
-            <img src="https://d3n8a8pro7vhmx.cloudfront.net/fraserriverkeeper/pages/108/attachments/original/1437935380/SocialMedia_TW.png?1437935380" alt="twitter"/>
+            <img src="https://d3n8a8pro7vhmx.cloudfront.net/fraserriverkeeper/pages/108/attachments/original/1437935380/SocialMedia_TW.png" alt="twitter"/>
           </a>
           <a href="https://instagram.com/fraserrivkeeper/" target="_blank">
-            <img src="https://d3n8a8pro7vhmx.cloudfront.net/fraserriverkeeper/pages/108/attachments/original/1437935379/SocialMedia_IG.png?1437935379" alt="instagram" />
+            <img src="https://d3n8a8pro7vhmx.cloudfront.net/fraserriverkeeper/pages/108/attachments/original/1437935379/SocialMedia_IG.png" alt="instagram" />
           </a>
           <a href="https://www.facebook.com/pages/Fraser-Riverkeeper/110703155608198?ref=hl" target="_blank">
-            <img src="https://d3n8a8pro7vhmx.cloudfront.net/fraserriverkeeper/pages/108/attachments/original/1437935377/SocialMedia_FB.png?1437935377" alt="facebook" />
+            <img src="https://d3n8a8pro7vhmx.cloudfront.net/fraserriverkeeper/pages/108/attachments/original/1437935377/SocialMedia_FB.png" alt="facebook" />
           </a>
         </div>
       </div>
@@ -161,7 +169,7 @@
               {% endif %}
             </div>
 
-              <div class="row">
+              <div class="row" id="whiterfooter">
                 <div class="footer-items col-xs-12 col-md-6 footer-left">
                   {% if request.logged_in? %}
                     Hi <a href="{{ request.current_signup.settings_url }}">{{ request.current_signup.name_or_email }}</a>. View your
