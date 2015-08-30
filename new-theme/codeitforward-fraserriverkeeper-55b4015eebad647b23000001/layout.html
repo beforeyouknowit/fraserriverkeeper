@@ -44,21 +44,17 @@
       <div class="main container clearfix {% if site.has_background_image? %}well well-lg{% endif %}">
 
         {% if request.is_sidebar? %}
-        {% include "columns_2" %}
+          {% include "columns_2" %}
         {% else %}
-        {% include "columns_1" %}
+          {% include "columns_1" %}
         {% endif %}
 
+        {% if site.is_homepage? %}
+          {% include "supporter_carousel" %}
+        {% endif %}
       </div>
       <!-- .main -->
     </div>
-
-    <!-- Supporters Carousel to go here -->
-    {% comment %}
-      {% if site.is_homepage? %}
-        {% include "supporter_carousel" %}
-      {% endif %}
-    {% endcomment %}
 
     <!-- .main-container -->
     <footer>
