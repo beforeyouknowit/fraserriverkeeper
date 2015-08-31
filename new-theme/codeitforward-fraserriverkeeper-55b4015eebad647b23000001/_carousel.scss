@@ -151,6 +151,12 @@
     font-family: serif;
   }
 
+  //Hide bootstrap chevron and use font-awesome's chevron
+  .glyphicon-chevron-left:before, .glyphicon-chevron-right:before
+  {
+    content: '';
+  }
+
 
   .icon-prev {
     &:before {
