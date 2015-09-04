@@ -468,7 +468,7 @@
 
 .navbar-nav
 {
-  background-color: #69BFEB;
+  background-color: #37677F;
 
   li:nth-last-child(2)
   {
@@ -761,16 +761,22 @@
     height: 66px;
   }
 
-  .navbar-custom
+  .navbar-container
   {
-    background-color: #69BFEB;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .navbar-custom, .navbar-header
+  {
+    background-color: #37677F !important;
   }
 
   .collapse
   {
     &.in
     {
-      background-color: #69BFEB;
+      background-color: #37677F;
     }
   }
 
