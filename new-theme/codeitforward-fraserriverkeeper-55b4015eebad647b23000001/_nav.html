@@ -3,7 +3,7 @@
 {% else %}
 <nav class="navbar navbar-subpages navbar-static-top" role="navigation">
 {% endif %}
-  <div class="container">
+  <div class="container navbar-container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapse">
         <span></span>
@@ -35,7 +35,7 @@
           <a href="{{ site.full_url }}login" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="glyphicon glyphicon-user"></i>&nbsp;<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <!-- If logged in, show logout button in dropdown -->
-            {%if request.logged_in? %} 
+            {%if request.logged_in? %}
             <li><a href="{{ site.full_url }}logout"><i class="glyphicon glyphicon-exit"></i>Sign Out </a></li>
             {% else %}
             <!-- Otherwise, show login buttons in dropdown -->

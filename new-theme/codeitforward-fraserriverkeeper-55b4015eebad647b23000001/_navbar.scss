@@ -28,6 +28,13 @@
 // Groups `.navbar-brand` and `.navbar-toggle` into a single component for easy
 // styling of responsive aspects.
 
+.navbar-container
+{
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 0;
+}
+
 .navbar-header {
   @include clearfix;
 
@@ -789,5 +796,14 @@
         text-align: center;
       }
     }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 877px)
+{
+  .navbar-nav, .navbar-title
+  {
+    position: relative;
+    top:44px;
   }
 }
