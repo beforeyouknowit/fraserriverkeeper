@@ -210,7 +210,7 @@
   position: relative;
   float: right;
   margin-right: $navbar-padding-horizontal;
-  padding: 38px 10px;
+  padding: 13px 10px;
   @include navbar-vertical-align(34px);
   background-color: transparent;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
@@ -468,7 +468,7 @@
 
 .navbar-nav
 {
-  background-color: #37677F;
+  background-color: #4b768c;
 
   li:nth-last-child(2)
   {
@@ -615,7 +615,7 @@
 
 .navbar-subpages
 {
-  background-color: #69BFEB;
+  background-color: #4b768c;
   margin-bottom: 84px;
 }
 
@@ -769,14 +769,14 @@
 
   .navbar-custom, .navbar-header
   {
-    background-color: #37677F !important;
+    background-color: #4b768c !important;
   }
 
   .collapse
   {
     &.in
     {
-      background-color: #37677F;
+      background-color: #4b768c;
     }
   }
 
